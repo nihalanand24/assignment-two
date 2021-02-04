@@ -1,0 +1,13 @@
+$robin-egg-blue: #86E0F9;
+$spruce: #0F614E;
+$dark-blue-grey: #0C1423;
+
+// font-family: 'Barlow', sans-serif;
+// font-family: 'Lato', sans-serif;
+
+@mixin barlow($size, $line-height){
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: $size;
+    line-height: $line-height;
+}

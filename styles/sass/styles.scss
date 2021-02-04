@@ -1,0 +1,13 @@
+@import 'header';
+@import 'setup';
+@import 'variables';
+
+.wrapper {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: $dark-blue-grey;
+}
