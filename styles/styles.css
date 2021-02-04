@@ -306,6 +306,32 @@ template {
   overflow: hidden;
 }
 
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  color: white;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 200px 0;
+}
+
+.intro h2 {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 42px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .wrapper {
   width: 80%;
   max-width: 1280px;
@@ -314,4 +340,30 @@ template {
 
 body {
   background-color: #0C1423;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  line-height: 32px;
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  margin: 0;
+}
+
+button {
+  text-transform: uppercase;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  padding: 5px 25px;
+  border: none;
+}
+
+.find-out {
+  color: #0C1423;
+  background-color: #86E0F9;
+  margin: 30px 0;
 }

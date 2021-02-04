@@ -1,0 +1,21 @@
+@import 'variables';
+
+.intro{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+
+    color:white;
+    text-align: center;
+    align-items: center;
+
+    padding:200px 0;
+    
+    h2
+    {
+        @include barlow(42px, 42px);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}
+

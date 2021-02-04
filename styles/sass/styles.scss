@@ -1,6 +1,7 @@
 @import 'header';
 @import 'setup';
 @import 'variables';
+@import 'intro';
 
 .wrapper {
     width: 80%;
@@ -10,4 +11,28 @@
 
 body {
     background-color: $dark-blue-grey;
+}
+
+p{
+    color:white;
+
+    font-size:20px;
+    line-height:32px;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    margin:0;
+}
+
+button{
+    text-transform: uppercase;
+    @include barlow(20px,32px);
+    letter-spacing: 1px;
+    padding:5px 25px;
+    border:none;
+}
+
+.find-out{
+    color:$dark-blue-grey;
+    background-color: $robin-egg-blue;
+    margin: 30px 0;
 }
