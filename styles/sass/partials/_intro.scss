@@ -1,6 +1,6 @@
 @import 'variables';
 
-.intro{
+.intro {
     display:flex;
     flex-direction: column;
     width:100%;
@@ -11,8 +11,7 @@
 
     padding:200px 0;
     
-    h2
-    {
+    h2 {
         @include barlow(42px, 42px);
         text-transform: uppercase;
         letter-spacing: 1px;

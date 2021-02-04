@@ -1,7 +1,9 @@
-@import 'header';
-@import 'setup';
-@import 'variables';
-@import 'intro';
+@import './partials/header';
+@import './partials/setup';
+@import './partials/variables';
+@import './partials/intro';
+@import './partials/footer';
+@import './partials/profile';
 
 .wrapper {
     width: 80%;
@@ -11,27 +13,33 @@
 
 body {
     background-color: $dark-blue-grey;
+    color: white;
 }
 
-p{
-    color:white;
+p {
 
-    font-size:20px;
-    line-height:32px;
+    font-size: 20px;
+    line-height: 32px;
     font-family: 'Lato', sans-serif;
     text-align: left;
-    margin:0;
+    margin: 0;
 }
 
-button{
+h2 {
+    @include barlow(42px, 42px);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button {
     text-transform: uppercase;
     @include barlow(20px,32px);
     letter-spacing: 1px;
-    padding:5px 25px;
-    border:none;
+    padding: 5px 25px;
+    border: none;
 }
 
-.find-out{
+.find-out {
     color:$dark-blue-grey;
     background-color: $robin-egg-blue;
     margin: 30px 0;
