@@ -4,6 +4,7 @@
 @import './partials/intro';
 @import './partials/footer';
 @import './partials/profile';
+@import './partials/featured';
 
 .wrapper {
     width: 80%;
@@ -25,18 +26,31 @@ p {
     margin: 0;
 }
 
-h2 {
-    @include barlow(42px, 42px);
+h2,
+h3 {
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+h2 {
+    @include barlow(42px, 42px);
+}
+
+h3 {
+    @include barlow(32px, 32px)
 }
 
 button {
     text-transform: uppercase;
     @include barlow(20px,32px);
     letter-spacing: 1px;
-    padding: 5px 25px;
+    padding: 10px 25px;
     border: none;
+}
+
+.read-more {
+    color: white;
+    background-color: $dark-blue-grey;
 }
 
 .find-out {
