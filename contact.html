@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +11,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap" rel="stylesheet">
 
+
+        <!-- Font Awesome Link -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
-    <header class="contact">
+    <header class="contact-header">
 
         <div class="wrapper">
 
@@ -25,8 +31,71 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-        </div>
 
+            <h1>Get in touch</h1>
+        </div>
     </header>
+
+    <div class="wrapper contact-wrapper">
+        <main>
+            
+            <section class="contact-us">
+                <div class="details">
+                    <!-- FONT AWESOME ICONS -->
+                    <div class="contact-heading">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-whatsapp"></i>
+                        
+                        <p>info@email.com</p>
+                    
+                    </div>
+                    
+                    <p>
+                        123-456-7890<br>
+                        123 Queen Street West, Unit 10<br>
+                        Toronto, Ontario<br>
+                        M5V2D5<br>
+                    </p>
+
+                </div>
+
+                <fieldset>
+                    <form action="#">
+
+                        <div class="input-row">
+
+                            <span class="sr-only">
+                                <label for="name">Name</label>
+                            </span>
+                            <input type="text" id="name" placeholder="Name">
+                            
+                            <span class="sr-only">
+                                <label for="email">Email Address</label>
+                            </span>
+                            <input type="email" id="email" placeholder="Email address">
+                            
+                        </div>
+                        <span class="sr-only">
+                            <label for="message">Message</label>
+                        </span>
+                        <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
+
+                        <button type="submit" class="read-more">Submit</button>
+
+                    </form>
+                </fieldset>
+            </section>
+    
+        </main>
+    </div>
+
+    <footer>
+        <p>
+            Created at Juno College
+        </p>
+    </footer>
 </body>
+
 </html>

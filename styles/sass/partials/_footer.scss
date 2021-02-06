@@ -1,19 +1,6 @@
 @import 'variables';
 
 footer {
-    background-color: $spruce;
-}
-.gallery {
-    padding: 100px 0;
-    display: flex;
-    justify-content: space-between;
-
-    img {
-        width: 31%;
-    }
-}
-
-.copyright {
     background-color: $robin-egg-blue;
     border-top: 1px solid $dark-blue-grey;
     padding: 2px;

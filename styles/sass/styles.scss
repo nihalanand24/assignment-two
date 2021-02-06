@@ -29,7 +29,8 @@ p {
 }
 
 h2,
-h3 {
+h3,
+.contact-heading {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -38,7 +39,8 @@ h2 {
     @include barlow(42px, 42px);
 }
 
-h3 {
+h3,
+{
     @include barlow(32px, 32px)
 }
 
