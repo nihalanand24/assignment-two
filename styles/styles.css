@@ -1,6 +1,6 @@
 header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../assets/header-image.jpg) no-repeat center/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/header-image.jpg) no-repeat center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../../assets/header-image.jpg) no-repeat center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/header-image.jpg) no-repeat center/cover;
   height: 750px;
 }
 
@@ -14,6 +14,23 @@ header h1 {
   width: 30%;
   display: inline-block;
   padding: 50px 0 0 0;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  padding: 10px 5px;
+}
+
+header a:hover,
+header a:focus {
+  color: #86E0F9;
 }
 
 header ul {
@@ -31,23 +48,6 @@ header ul {
 header ul li {
   margin: 20px 25px;
   padding-top: 10px;
-}
-
-header ul li a {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-family: 'Barlow', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 29px;
-  padding: 10px 5px;
-}
-
-header ul li a:hover,
-header ul li a:focus {
-  color: #86E0F9;
 }
 
 header ul li:last-of-type {
@@ -523,6 +523,10 @@ footer {
 
 .info:last-of-type h3::before {
   content: "\f095";
+}
+
+.contact {
+  background: url(../../../assets/contact-header.jpg) no-repeat center/cover;
 }
 
 .wrapper {
