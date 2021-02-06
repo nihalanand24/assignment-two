@@ -471,6 +471,60 @@ footer {
   width: 70%;
 }
 
+.about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  -ms-grid-rows: (220px)[2];
+      grid-template-rows: repeat(2, 220px);
+  gap: 20px;
+  padding: 150px 0 50px;
+}
+
+.info {
+  position: relative;
+  margin: 0 15px;
+}
+
+.info h3 {
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.info ::before {
+  font-size: 27px;
+  display: inline-block;
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background-color: #86E0F9;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: #0C1423;
+  line-height: 1.9;
+  text-align: center;
+  left: -70px;
+  top: -5px;
+}
+
+.info:first-of-type h3::before {
+  content: "\f124";
+}
+
+.info:nth-of-type(2) h3::before {
+  content: "\f0c0";
+}
+
+.info:nth-of-type(3) h3::before {
+  content: "\f15b";
+}
+
+.info:last-of-type h3::before {
+  content: "\f095";
+}
+
 .wrapper {
   width: 80%;
   max-width: 1280px;
