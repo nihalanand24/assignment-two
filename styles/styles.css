@@ -1,6 +1,6 @@
 header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../../assets/header-image.jpg) no-repeat center/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/header-image.jpg) no-repeat center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../assets/header-image.jpg) no-repeat center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/header-image.jpg) no-repeat center/cover;
   height: 750px;
 }
 
@@ -533,7 +533,7 @@ footer p {
 }
 
 .contact-header {
-  background: url(../../../assets/contact-header.jpg) no-repeat center/cover;
+  background: url(../assets/contact-header.jpg) no-repeat center/cover;
   width: 100%;
   height: 750px;
 }
@@ -642,7 +642,7 @@ footer p {
 }
 
 .blog-header {
-  background: url(../../../assets/blog-header.jpg) no-repeat center/cover;
+  background: url(../assets/blog-header.jpg) no-repeat center/cover;
   width: 100%;
 }
 
@@ -656,78 +656,128 @@ footer p {
   padding-top: 150px;
 }
 
-.blog-wrapper {
-  width: 80%;
-  margin: 0 5% 0 0;
-  padding-left: 45px;
-}
-
 .blog-main {
+  padding: 100px;
+}
+
+.blog-flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-aside {
-  width: 30%;
-  margin-top: 150px;
+.blog-flexbox aside {
+  width: 25vw;
+  background-color: #0F614E;
+  padding-right: 1vw;
 }
 
-aside img {
-  width: 30vw;
+.blog-flexbox aside div {
+  padding: 5px 20px;
 }
 
-article img {
-  margin: 0;
+.blog-flexbox aside img {
+  width: 35vw;
+  position: relative;
+  right: 10vw;
+  top: -1vw;
+  padding-right: 1vw;
 }
 
-.blog-post {
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  width: 70%;
-}
-
-.blog-post > img {
-  -webkit-box-shadow: -40px 40px #86E0F9;
-          box-shadow: -40px 40px #86E0F9;
-}
-
-.blog-text {
+.blog-flexbox article {
+  width: 51vw;
   border-bottom: 4px solid #86E0F9;
   border-left: 4px solid #86E0F9;
-  padding-top: 50px;
-  margin-left: 10%;
+  position: absolute;
+  right: 10vw;
+  top: 450px;
+  padding-bottom: 20px;
 }
 
-.recent-posts {
-  padding: 20px 40px 20px 10px;
-  background-color: #0F614E;
-  padding-top: 480px;
-  margin-top: -440px;
+.blog-flexbox article h2 {
+  margin-bottom: 0;
+}
+
+.blog-flexbox article .byline {
+  margin: 0 0 60px 0;
+}
+
+.blog-flexbox article img {
+  width: calc(61vw - 40px);
+  position: relative;
+  left: 36px;
+  top: -40px;
+  -webkit-box-shadow: -36px 40px #86E0F9;
+          box-shadow: -36px 40px #86E0F9;
+}
+
+.blog-flexbox article div {
+  padding-left: 36px;
 }
 
 .comments {
-  text-align: left;
+  padding-top: 200px;
+  padding-left: 31vw;
 }
 
 .comments .comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 50px 0;
+}
+
+.comments .comment p {
+  padding-left: 20px;
+}
+
+.comments .comment img {
+  width: 90px;
+  height: 90px;
+}
+
+.comments input,
+.comments textarea {
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+
+.comments input {
+  border-bottom: 2px solid #86E0F9;
+  width: 48%;
+}
+
+.comments textarea {
+  border: 2px solid #86E0F9;
+  width: 100%;
+  margin: 40px 0;
+  resize: none;
+}
+
+.comments button {
+  background-color: #0F614E;
+  width: 100%;
+}
+
+.comments .comment-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .wrapper {
-  width: 80%;
-  max-width: 1280px;
+  width: 80vw;
   margin: 0 auto;
 }
 

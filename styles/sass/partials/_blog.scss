@@ -1,7 +1,7 @@
 @import 'variables';
 .blog-header {
     background:
-    url(../../../assets/blog-header.jpg) no-repeat center / cover;
+    url(../assets/blog-header.jpg) no-repeat center / cover;
 
         width: 100%;
 
@@ -10,72 +10,123 @@
         width: 70%;
         margin-left: 30%;
         padding-top: 150px;
-    }
-    
-}
-
-.blog-wrapper {
-    // position: relative;
-    // height: 400px;
-    width: 80%;
-    margin: 0 5% 0 0;
-    padding-left: 45px;
+    } 
 }
 
 .blog-main {
+    padding: 100px;
+}
+
+.blog-flexbox {
     display: flex;
-}
+    justify-content: space-between;
 
-aside{
-    width:30%;
-    // background-color: $spruce;
-    margin-top:150px;
+    aside {
+        width: 25vw;
+        background-color: $spruce;
+        padding-right: 1vw;
 
-    img {
-        width: 30vw;
+        div {
+            padding: 5px 20px;
+        }
+
+        img {
+            width: 35vw;
+            position: relative;
+            right: 10vw;
+            top: -1vw;
+            padding-right: 1vw;
+        }
     }
 
-}
+    article {
+        width: 51vw;
+        border-bottom: 4px solid $robin-egg-blue;
+        border-left: 4px solid $robin-egg-blue;
+        position: absolute;
+        right: 10vw;
+        top: 450px;
+        padding-bottom: 20px;
 
-article {
-    img {
-        margin: 0;
+        h2 {
+            margin-bottom: 0;
+        }
+
+        .byline {
+            margin: 0 0 60px 0;
+        }
+        
+
+        img {
+            width: calc(61vw - 40px);
+            position: relative;
+            left: 36px;
+            top: -40px;
+
+            box-shadow: -36px 40px $robin-egg-blue;
+        }
+
+        div {
+            padding-left: 36px;
+        }
     }
-}
-
-.blog-post {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-    width: 70%;
-    
-    > img {
-        box-shadow: -40px 40px $robin-egg-blue;
-    }
-}
-
-.blog-text {
-    border-bottom: 4px solid $robin-egg-blue;
-    border-left: 4px solid $robin-egg-blue;
-    padding-top: 50px;
-    margin-left: 10%;
-
-    // padding-left: 40px;
-}
-
-.recent-posts {
-    padding:20px 40px 20px 10px;
-    background-color: $spruce;
-    padding-top: 480px;
-    margin-top: -440px;
 }
 
 .comments {
-    text-align: left;
+    padding-top: 200px;
+    padding-left: 31vw;
 
     .comment {
         display: flex;
+        justify-content: space-between;
+        margin: 50px 0;
+        p {
+            padding-left: 20px;
+        }
+
+        img {
+            width: 90px;
+            height: 90px;
+        }
     }
+
+    // COPIED OVER FROM CONTACTS
+    
+    input,
+    textarea {
+        background-color: transparent;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+    }
+    
+    input {
+        border-bottom: 2px solid $robin-egg-blue;
+        width: 48%;
+    }
+    
+    textarea {
+        border: 2px solid $robin-egg-blue;
+        width: 100%;
+        margin: 40px 0;
+        resize: none;
+    }
+
+    button {
+        background-color: $spruce;
+        width: 100%;
+    }
+
+        .comment-row {
+            display: flex;
+            justify-content: space-between;
+            // padding: 0 5%;
+        }
+
 }
+
+
+
+
+
+
