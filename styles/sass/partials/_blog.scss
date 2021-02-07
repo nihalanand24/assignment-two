@@ -1,0 +1,37 @@
+@import 'variables';
+.blog-header {
+    background:
+    url(../../../assets/blog-header.jpg) no-repeat center / cover;
+
+        width: 100%;
+
+    h1 {
+        @include barlow(80px, 92px);
+        width: 70%;
+        margin-left: 30%;
+        padding-top: 150px;
+    }
+    
+}
+
+.blog-wrapper {
+    position: relative;
+    height: 400px;
+}
+
+aside{
+    width:30%;
+
+    background-color: $spruce;
+    margin-top:150px;
+    padding:400px 40px 20px 10px;
+    
+
+}
+
+.blog-main{
+    img:first-of-type{
+        position:absolute;
+        top:400px;
+    }
+}
