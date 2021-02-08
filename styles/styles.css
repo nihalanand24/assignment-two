@@ -643,7 +643,6 @@ footer p {
 
 .blog-header {
   background: url(../assets/blog-header.jpg) no-repeat center/cover;
-  width: 100%;
 }
 
 .blog-header h1 {
@@ -651,8 +650,7 @@ footer p {
   font-weight: 700;
   font-size: 80px;
   line-height: 92px;
-  width: 70%;
-  margin-left: 30%;
+  margin-left: 32vw;
   padding-top: 150px;
 }
 
@@ -667,6 +665,7 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 2000px;
 }
 
 .blog-flexbox aside {
@@ -687,18 +686,19 @@ footer p {
   padding-right: 1vw;
 }
 
-.blog-flexbox article {
+.blog-flexbox .article-container {
   width: 51vw;
-  border-bottom: 4px solid #86E0F9;
-  border-left: 4px solid #86E0F9;
   position: absolute;
-  right: 10vw;
   top: 450px;
+  right: calc(10vw - 6px);
+}
+
+.blog-flexbox article {
   padding-bottom: 20px;
 }
 
 .blog-flexbox article h2 {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .blog-flexbox article .byline {
@@ -706,21 +706,24 @@ footer p {
 }
 
 .blog-flexbox article img {
-  width: calc(61vw - 40px);
+  width: calc(61vw - 46px);
   position: relative;
-  left: 36px;
+  left: 40px;
   top: -40px;
-  -webkit-box-shadow: -36px 40px #86E0F9;
-          box-shadow: -36px 40px #86E0F9;
+  display: block;
+  -webkit-box-shadow: -40px 40px #86E0F9;
+          box-shadow: -40px 40px #86E0F9;
 }
 
 .blog-flexbox article div {
-  padding-left: 36px;
+  margin-top: 0;
+  padding: 20px 0 20px 36px;
+  border-bottom: 4px solid #86E0F9;
+  border-left: 4px solid #86E0F9;
 }
 
 .comments {
-  padding-top: 200px;
-  padding-left: 31vw;
+  padding-left: 40px;
 }
 
 .comments .comment {
