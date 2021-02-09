@@ -10,6 +10,10 @@
     align-items: center;
 
     padding:200px 0;
+
+    @include MQ($tablet) {
+        padding: 50px 20px;
+    }
     
     h2 {
         @include barlow(42px, 42px);

@@ -7,56 +7,99 @@
 .row {
 
     display: flex;
+
+    @include MQ($laptop) {
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 50%;
+
+        @include MQ($laptop) {
+            width: 100%;
+        }
+    
+        img {
+            width: 85%;
+            object-fit: cover;
+            object-position: center;
+    
+            box-shadow: 3vw 3vw $robin-egg-blue;
+    
+            position: relative;
+            top: -3vw;
+
+            @include MQ($laptop) {
+                width: 90%;
+            }
+        }
+        
+        
+    }
+    
+    .feature {
+        width: 50%;
+        padding-top: 50px;
+        
+        @include MQ($laptop) {
+            width: 100%;
+            text-align: center;
+        }
+        
+        button {
+            margin: 30px 0;
+        }
+        
+        .wrapper {
+            width: 70%;
+            
+            @include MQ($phone) {
+                width: 90%;
+            }
+        }
+        
+    }
     
     &:last-of-type {
         flex-direction: row-reverse;
-
+        
+        @include MQ($laptop) {
+            flex-direction: column;
+        }
+        
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        
         img {
             display: block;
             margin-left: 15%;
-            box-shadow: -40px 40px $robin-egg-blue;
-
-            bottom: -40px;
+            box-shadow: -3vw 3vw $robin-egg-blue;
+            
             top: 0;
+            
+            @include MQ($laptop) {
+                margin-left: 10%;
+                width: 90%
+            }
+            
+            
         }
-
-        .feature * {
+        
+        .feature {
             text-align: right;
+            
+            @include MQ($laptop) {
+                text-align: center;
+            }
         }   
     }
 
 }
 
 
-.image-container {
-    width: 50%;
 
-    img {
-        width: 85%;
-        object-fit: cover;
-        object-position: center;
-
-        box-shadow: 40px 40px $robin-egg-blue;
-
-        position: relative;
-        top: -40px;
-    }
-    
-
-}
-
-.feature {
-    width: 50%;
-    padding-top: 50px;
-
-    button {
-        margin-top: 30px;
-    }
-
-    .wrapper {
-        width: 70%;
-    }
-
-}
 
 

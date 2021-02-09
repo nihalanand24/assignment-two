@@ -8,7 +8,7 @@ header {
     ;
     height: 750px;
 
-    @include phoneMQ {
+    @include MQ($tablet) {
         height: 120vw;
     }
 
@@ -20,7 +20,7 @@ header {
         display: inline-block;
         padding: 50px 0 0 0;
         
-        @include phoneMQ {
+        @include MQ($tablet) {
             width: 100%;
             padding: 0;
             text-align: center;
@@ -52,7 +52,7 @@ header {
 
         justify-content: flex-end;
 
-        @include phoneMQ {
+        @include MQ($tablet) {
             // align-items: flex-end;
             // flex-direction: column;
             justify-content: space-around;
@@ -62,7 +62,7 @@ header {
             margin: 20px 25px;
             padding-top: 10px;
 
-            @include phoneMQ {
+            @include MQ($tablet) {
                 margin: 5px;
                 padding-top: 0;
             }
@@ -87,7 +87,7 @@ header {
         // }
 
 
-        @include phoneMQ {
+        @include MQ($tablet) {
             // top: 500px;
             width: 95vw;
             // right: 0;

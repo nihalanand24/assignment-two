@@ -12,8 +12,13 @@ $dark-blue-grey: #0C1423;
     line-height: $line-height;
 }
 
-@mixin phoneMQ {
-    @media screen and (max-width: 768px) {
+$phone: 450px;
+$tablet: 768px;
+$laptop: 1000px;
+
+
+@mixin MQ($width) {
+    @media screen and (max-width: $width) {
         @content;
     }
 }
