@@ -9,10 +9,18 @@
 @import './partials/contact';
 @import './partials/blog';
 
+html {
+    font-size: 62.5%;
+}
+
 .wrapper {
     width: 80vw;
     // max-width: 1280px;
     margin: 0 auto;
+
+    @include phoneMQ {
+        width: 95vw;
+    }
 }
 
 body {

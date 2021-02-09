@@ -11,3 +11,9 @@ $dark-blue-grey: #0C1423;
     font-size: $size;
     line-height: $line-height;
 }
+
+@mixin phoneMQ {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}

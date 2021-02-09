@@ -1,5 +1,6 @@
 @import 'variables';
 
+
 header {
     background: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
@@ -7,51 +8,89 @@ header {
     ;
     height: 750px;
 
+    @include phoneMQ {
+        height: 120vw;
+    }
+
     h1 {
         text-transform: uppercase;
         color: white;
-        @include barlow(138px, 126px);
+        @include barlow(calc(5rem + 5vw), calc(4rem + 5vw));
         width: 30%;
         display: inline-block;
         padding: 50px 0 0 0;
+        
+        @include phoneMQ {
+            width: 100%;
+            padding: 0;
+            text-align: center;
+            font-size: calc(3rem + 6vw);
+        }
     }
-
+    
     a {
         color: white;
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: 1px;
-        @include barlow(20px, 29px);
+        @include barlow(calc(1rem + 1vw), 29px);
         padding: 10px 5px;
+        
+        &:hover,
+        &:focus {
+            color: $robin-egg-blue;
+        }
     }
 
-    a:hover,
-    a:focus {
-        color: $robin-egg-blue;
-    }
 
     ul {
         margin: 0;
+        padding: 0;
         list-style: none;
         text-decoration: none;
         display: flex;
 
         justify-content: flex-end;
 
+        @include phoneMQ {
+            // align-items: flex-end;
+            // flex-direction: column;
+            justify-content: space-around;
+        }
+
         li {
             margin: 20px 25px;
             padding-top: 10px;
 
+            @include phoneMQ {
+                margin: 5px;
+                padding-top: 0;
+            }
+
+            &:last-of-type {
+                margin-right: 0;
+            }
         }
 
-        li:last-of-type {
-            margin-right: 0;
-        }
+
+
     }
 
     .header-image {
         position: absolute;
         right: 0;
         top: 200px;
+        display: block;
+        width: 50vw;
+
+        // img {
+        // }
+
+
+        @include phoneMQ {
+            // top: 500px;
+            width: 95vw;
+            // right: 0;
+        }
     }
 }

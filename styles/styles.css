@@ -4,16 +4,31 @@ header {
   height: 750px;
 }
 
+@media screen and (max-width: 768px) {
+  header {
+    height: 120vw;
+  }
+}
+
 header h1 {
   text-transform: uppercase;
   color: white;
   font-family: 'Barlow', sans-serif;
   font-weight: 700;
-  font-size: 138px;
-  line-height: 126px;
+  font-size: calc(5rem + 5vw);
+  line-height: calc(4rem + 5vw);
   width: 30%;
   display: inline-block;
   padding: 50px 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    font-size: calc(3rem + 6vw);
+  }
 }
 
 header a {
@@ -23,18 +38,18 @@ header a {
   letter-spacing: 1px;
   font-family: 'Barlow', sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: calc(1rem + 1vw);
   line-height: 29px;
   padding: 10px 5px;
 }
 
-header a:hover,
-header a:focus {
+header a:hover, header a:focus {
   color: #86E0F9;
 }
 
 header ul {
   margin: 0;
+  padding: 0;
   list-style: none;
   text-decoration: none;
   display: -webkit-box;
@@ -45,9 +60,23 @@ header ul {
           justify-content: flex-end;
 }
 
+@media screen and (max-width: 768px) {
+  header ul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 header ul li {
   margin: 20px 25px;
   padding-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  header ul li {
+    margin: 5px;
+    padding-top: 0;
+  }
 }
 
 header ul li:last-of-type {
@@ -58,6 +87,14 @@ header .header-image {
   position: absolute;
   right: 0;
   top: 200px;
+  display: block;
+  width: 50vw;
+}
+
+@media screen and (max-width: 768px) {
+  header .header-image {
+    width: 95vw;
+  }
 }
 
 html {
@@ -779,9 +816,19 @@ footer p {
           justify-content: space-between;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 .wrapper {
   width: 80vw;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 95vw;
+  }
 }
 
 body {
