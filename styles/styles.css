@@ -838,8 +838,26 @@ footer p {
   padding: 0 5%;
 }
 
+.blog-wrapper {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-wrapper {
+    width: 90vw;
+  }
+}
+
 .blog-header {
   background: url(../assets/blog-header.jpg) no-repeat center/cover;
+}
+
+@media screen and (max-width: 1000px) {
+  .blog-header {
+    height: 60vw;
+    min-height: 275px;
+  }
 }
 
 .blog-header h1 {
@@ -851,8 +869,30 @@ footer p {
   padding-top: 150px;
 }
 
+@media screen and (max-width: 1000px) {
+  .blog-header h1 {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog-header h1 {
+    padding: 0;
+    margin-left: 0;
+  }
+}
+
 .blog-main {
-  padding: 100px;
+  padding: 100px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .blog-main {
+    padding: 0;
+  }
 }
 
 .blog-flexbox {
@@ -862,13 +902,33 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 2000px;
+}
+
+@media screen and (max-width: 1000px) {
+  .blog-flexbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .blog-flexbox aside {
   width: 25vw;
   background-color: #0F614E;
   padding-right: 1vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .blog-flexbox aside {
+    width: 100%;
+    padding: 0 2% 20px;
+    margin-top: -30vw;
+    text-align: center;
+  }
+  .blog-flexbox aside h3 {
+    margin: 2%;
+  }
 }
 
 .blog-flexbox aside div {
@@ -883,15 +943,47 @@ footer p {
   padding-right: 1vw;
 }
 
+@media screen and (max-width: 1000px) {
+  .blog-flexbox aside img {
+    display: none;
+  }
+}
+
 .blog-flexbox .article-container {
   width: 51vw;
-  position: absolute;
-  top: 450px;
-  right: calc(10vw - 6px);
+  position: relative;
+  top: -400px;
+  margin-bottom: -300px;
+}
+
+@media screen and (max-width: 1000px) {
+  .blog-flexbox .article-container {
+    top: 50px;
+    width: 100%;
+    margin-bottom: 120px;
+  }
+  .blog-flexbox .article-container article img {
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    position: static;
+    min-height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .blog-flexbox .article-container div {
+    border: none;
+  }
 }
 
 .blog-flexbox article {
   padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .blog-flexbox article {
+    border: 4px solid #86E0F9;
+  }
 }
 
 .blog-flexbox article h2 {
@@ -903,24 +995,29 @@ footer p {
 }
 
 .blog-flexbox article img {
-  width: calc(61vw - 46px);
   position: relative;
-  left: 40px;
-  top: -40px;
-  display: block;
-  -webkit-box-shadow: -40px 40px #86E0F9;
-          box-shadow: -40px 40px #86E0F9;
+  width: calc(59vw - 8.1px);
+  left: 2vw;
+  top: -20px;
+  -webkit-box-shadow: -2vw 2vw #86E0F9;
+          box-shadow: -2vw 2vw #86E0F9;
 }
 
 .blog-flexbox article div {
-  margin-top: 0;
-  padding: 20px 0 20px 36px;
+  margin-top: -2vw;
+  padding: 3vw 0 20px 2vw;
   border-bottom: 4px solid #86E0F9;
   border-left: 4px solid #86E0F9;
 }
 
 .comments {
-  padding-left: 40px;
+  padding-left: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+  .comments {
+    padding: 0;
+  }
 }
 
 .comments .comment {
@@ -937,9 +1034,22 @@ footer p {
   padding-left: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .comments .comment p {
+    padding-left: 10px;
+  }
+}
+
 .comments .comment img {
   width: 90px;
   height: 90px;
+}
+
+@media screen and (max-width: 450px) {
+  .comments .comment img {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 .comments input,
@@ -976,12 +1086,20 @@ footer p {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+  .comments .comment-row input {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 html {
   font-size: 62.5%;
 }
 
 .wrapper {
   width: 80vw;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -996,7 +1114,9 @@ body {
   color: white;
 }
 
-p {
+p,
+input,
+textarea {
   font-size: 20px;
   line-height: 32px;
   font-family: 'Lato', sans-serif;
@@ -1045,4 +1165,13 @@ button {
   color: #0C1423;
   background-color: #86E0F9;
   margin: 30px 0;
+}
+
+@media screen and (max-width: 768px) {
+  form div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
