@@ -1,13 +1,12 @@
-@import 'variables';
+@import "variables";
 
 footer {
-    background-color: $robin-egg-blue;
-    border-top: 1px solid $dark-blue-grey;
-    padding: 2px;
+  background-color: $robin-egg-blue;
+  border-top: 1px solid $dark-blue-grey;
+  padding: 2px;
 
-
-    p {
-        color: $dark-blue-grey;
-        text-align: center;
-    }
+  p {
+    color: $dark-blue-grey;
+    text-align: center;
+  }
 }

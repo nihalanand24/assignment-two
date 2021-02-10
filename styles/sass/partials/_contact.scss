@@ -8,7 +8,7 @@
 
   @include MQ($laptop) {
     height: 60vw;
-    min-height: 250px
+    min-height: 250px;
   }
 
   h1 {
@@ -27,7 +27,7 @@
     }
 
     @include MQ($phone) {
-        padding-top: 60px;
+      padding-top: 60px;
     }
   }
 }
@@ -61,7 +61,7 @@
   }
 
   @include MQ($phone) {
-      margin-top: 0;
+    margin-top: 0;
   }
 
   fieldset {
@@ -81,9 +81,9 @@
     }
 
     @include MQ($tablet) {
-        box-shadow: none;
-        margin: 0 auto;
-        width: 90%;
+      box-shadow: none;
+      margin: 0 auto;
+      width: 90%;
     }
 
     input,
@@ -122,12 +122,12 @@
   width: 30%;
 
   @include MQ($laptop) {
-        bottom: -50px;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-        flex-wrap: wrap;
+    bottom: -50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
   }
 
   p {
@@ -142,7 +142,7 @@
     }
 
     @include MQ($laptop) {
-        margin-right: 20px;
+      margin-right: 20px;
     }
 
     i {
