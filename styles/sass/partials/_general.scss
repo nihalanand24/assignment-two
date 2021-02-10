@@ -1,0 +1,72 @@
+
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    width: 80vw;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    @include MQ($tablet) {
+        width: 95vw;
+    }
+}
+
+body {
+    background-color: $dark-blue-grey;
+    color: white;
+}
+
+p, 
+input,
+textarea {
+
+    font-size: 20px;
+    line-height: 32px;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    margin: 0;
+}
+
+h2,
+h3,
+.contact-heading {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h2 {
+    @include barlow(42px, 42px);
+}
+
+h3 {
+    @include barlow(32px, 32px)
+}
+
+button {
+    text-transform: uppercase;
+    @include barlow(20px,32px);
+    letter-spacing: 1px;
+    padding: 10px 25px;
+    border: none;
+}
+
+.read-more {
+    color: white;
+    background-color: $dark-blue-grey;
+}
+
+.find-out {
+    color:$dark-blue-grey;
+    background-color: $robin-egg-blue;
+    margin: 30px 0;
+}
+
+form {
+    div {
+        @include MQ($tablet) {
+            flex-direction: column;
+        }
+    }
+}

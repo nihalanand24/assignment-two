@@ -735,6 +735,13 @@ footer p {
   height: 750px;
 }
 
+@media screen and (max-width: 1000px) {
+  .contact-header {
+    height: 60vw;
+    min-height: 250px;
+  }
+}
+
 .contact-header h1 {
   font-family: 'Barlow', sans-serif;
   font-weight: 700;
@@ -745,9 +752,31 @@ footer p {
   padding-top: 150px;
 }
 
-.contact-wrapper {
-  position: relative;
-  height: 400px;
+@media screen and (max-width: 1000px) {
+  .contact-header h1 {
+    margin: 40px 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    font-size: calc(2rem + 7vw);
+    line-height: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact-header h1 {
+    padding-top: 60px;
+  }
+}
+
+.contact-main .wrapper {
+  width: 80vw;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-main .wrapper {
+    width: 90vw;
+  }
 }
 
 .contact-us {
@@ -760,20 +789,60 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: absolute;
+  position: relative;
   top: -350px;
-  right: 0;
   left: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-us {
+    position: static;
+    margin-top: -30vw;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact-us {
+    margin-top: 0;
+  }
 }
 
 .contact-us fieldset {
-  width: 68%;
+  width: calc(68%);
   background-color: #0F614E;
   border: none;
-  -webkit-box-shadow: -40px 40px #86E0F9;
-          box-shadow: -40px 40px #86E0F9;
+  -webkit-box-shadow: -2vw 2vw #86E0F9;
+          box-shadow: -2vw 2vw #86E0F9;
   padding-top: 100px;
+  margin-bottom: -200px;
   text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-us fieldset {
+    width: 100%;
+    padding-top: 20px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-us fieldset {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin: 0 auto;
+    width: 90%;
+  }
 }
 
 .contact-us fieldset input,
@@ -787,6 +856,12 @@ footer p {
 .contact-us fieldset input {
   border-bottom: 2px solid #86E0F9;
   width: 48%;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-us fieldset input {
+    width: 100%;
+  }
 }
 
 .contact-us fieldset textarea {
@@ -803,8 +878,23 @@ footer p {
 
 .details {
   position: relative;
-  bottom: -40px;
+  bottom: -200px;
   width: 30%;
+}
+
+@media screen and (max-width: 1000px) {
+  .details {
+    bottom: -50px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .details p {
@@ -820,8 +910,15 @@ footer p {
   margin: 15px 0;
 }
 
+@media screen and (max-width: 1000px) {
+  .details .contact-heading {
+    margin-right: 20px;
+  }
+}
+
 .details .contact-heading i {
   padding: 10px;
+  font-size: 20px;
 }
 
 .details .contact-heading i:first-of-type {
