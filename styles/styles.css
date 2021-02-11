@@ -684,7 +684,13 @@ footer p {
   margin-right: 30px;
 }
 
+.info a {
+  color: white;
+  text-decoration: none;
+}
+
 .info h3 {
+  display: inline-block;
   margin: 0;
   padding-bottom: 30px;
 }
