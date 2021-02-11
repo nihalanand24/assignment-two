@@ -73,6 +73,7 @@ header {
     top: 200px;
     display: block;
     width: 50vw;
+    max-width: 900px;
 
     @include MQ($tablet) {
       width: 95vw;

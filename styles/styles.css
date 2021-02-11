@@ -1,6 +1,6 @@
 header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../assets/header-image.jpg) no-repeat center/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/header-image.jpg) no-repeat center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../assets/header-image-min.jpg) no-repeat center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/header-image-min.jpg) no-repeat center/cover;
   height: 750px;
 }
 
@@ -89,6 +89,7 @@ header .header-image {
   top: 200px;
   display: block;
   width: 50vw;
+  max-width: 900px;
 }
 
 @media screen and (max-width: 768px) {
@@ -730,7 +731,7 @@ footer p {
 }
 
 .contact-header {
-  background: url(../assets/contact-header.jpg) no-repeat center/cover;
+  background: url(../assets/contact-header-min.jpg) no-repeat center/cover;
   width: 100%;
   height: 750px;
 }
@@ -947,7 +948,7 @@ footer p {
 }
 
 .blog-header {
-  background: url(../assets/blog-header.jpg) no-repeat center/cover;
+  background: url(../assets/blog-header-min.jpg) no-repeat center/cover;
 }
 
 @media screen and (max-width: 1000px) {
