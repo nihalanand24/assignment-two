@@ -9,7 +9,7 @@
 }
 
 .blog-header {
-  background: url(../assets/blog-header.jpg) no-repeat center / cover;
+  background: url(../assets/blog-header-min.jpg) no-repeat center / cover;
 
   @include MQ($laptop) {
     height: 60vw;
