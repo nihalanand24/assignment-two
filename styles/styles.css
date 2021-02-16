@@ -824,6 +824,7 @@ button {
 }
 
 .modal {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -840,6 +841,7 @@ button {
   top: 5%;
   right: 5%;
   font-size: 40px;
+  cursor: pointer;
 }
 
 .modal article {
