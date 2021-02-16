@@ -1,0 +1,49 @@
+@import 'variables';
+
+.show-modal {
+    cursor: pointer;
+}
+
+.modal {
+    // display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000DD;
+    text-align: center;
+    z-index: 10;
+
+    span {
+        font-family: 'Lato', sans-serif;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        font-size: 40px;
+    }
+
+    
+    article {
+        background-color: $spruce;
+        width: 80%;
+        height: 90%;
+        max-width: 1280px;
+        padding: 2% 10%;
+        margin: 2.5% auto;
+        overflow-y: auto;
+        border-radius: 2em;
+
+        .modal-image {
+            float: left;
+            box-shadow: none;
+            border: 4px solid $robin-egg-blue;
+            margin: 0 2% 0 0;
+            width: 50%;
+        }
+
+        p:last-of-type {
+            padding-bottom: 5%;
+        }
+    }
+}
