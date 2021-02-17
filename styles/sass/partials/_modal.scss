@@ -14,7 +14,7 @@
     background-color: #000000DD;
     text-align: center;
     z-index: 10;
-
+    
     span {
         font-family: 'Lato', sans-serif;
         position: absolute;
@@ -23,7 +23,6 @@
         font-size: 40px;
         cursor: pointer;
     }
-
     
     article {
         background-color: $spruce;
@@ -34,7 +33,7 @@
         margin: 2.5% auto;
         overflow-y: auto;
         border-radius: 2em;
-
+        
         @include MQ($tablet) {
             width: 90%;
         }

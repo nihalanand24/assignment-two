@@ -16,7 +16,7 @@ closeModal.forEach((icon, index) => {
 });
 
 function handleShow(modal){
-    modal.style.display = 'block'; 
+    modal.style.display = 'block';
 }
 
 function handleClose(modal){
